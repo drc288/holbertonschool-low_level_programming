@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFIEL -o ${$CFILE | tr "c" "s"}
+gcc -S $CFIEL -o ${CFILE | tr "c" "s"}
