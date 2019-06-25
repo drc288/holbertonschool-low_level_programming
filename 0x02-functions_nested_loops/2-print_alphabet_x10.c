@@ -1,9 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_alphabet_x10 - This is a description
  */
 
 void print_alphabet_x10(void)
@@ -16,8 +14,6 @@ void print_alphabet_x10(void)
 		{
 			_putchar(j);
 		}
-
-	
 		_putchar(10);
 	}
 }
