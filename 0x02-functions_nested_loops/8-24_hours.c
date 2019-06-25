@@ -1,8 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_last-digit - print the last
- * @n: number input
+ * jack_bauer - print 24 hours
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
@@ -16,7 +15,7 @@ void jack_bauer(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			for (q = 0; q <=5; q++)
+			for (q = 0; q <= 5; q++)
 			{
 				for (k = 0; k <= 9; k++)
 				{
