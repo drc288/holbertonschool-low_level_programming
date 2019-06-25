@@ -8,10 +8,12 @@
 
 int main(void)
 {
-	char *c = "Holberton";
+	char *c;
 	int i;
 
-	for (i = 0; i <= (sizeof(c)); i++)
+	c = "Holberton";
+
+	for (i = 0; i <= sizeof(c); i++)
 	{
 		_putchar(c[i]);
 	}
