@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * jack_bauer - print 24 hours
+ * times_tables - print 9 * 9
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
