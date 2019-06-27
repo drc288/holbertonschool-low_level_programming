@@ -11,12 +11,12 @@ int _isupper(int c)
 {
 	int i, ret;
 
-	ret = 0;
+	ret = 1;
 	for (i = 'a'; i < 'z'; i++)
 	{
 		if (c == i)
 		{
-			ret = 1;
+			ret = 0;
 		}
 	}
 
