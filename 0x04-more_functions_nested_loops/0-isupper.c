@@ -10,7 +10,7 @@
 int _isupper(int c)
 {
 	int i, ret;
-	
+
 	ret = 0;
 	for (i = 'a'; i < 'z'; i++)
 	{
