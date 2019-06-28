@@ -1,5 +1,3 @@
-#include "holberton.h"
-
 /**
  * _isupper - print is upper te value
  * @c: Input value
