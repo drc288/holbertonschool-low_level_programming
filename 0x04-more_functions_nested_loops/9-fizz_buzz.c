@@ -18,6 +18,10 @@ int main(void)
 		{
 			printf("FizzBuzz ");
 		}
+		else if ((mod5 == 0) && (i == 100))
+		{
+			printf("Buzz");
+		}
 		else if (mod3 == 0)
 		{
 			printf("Fizz ");
