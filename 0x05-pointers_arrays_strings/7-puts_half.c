@@ -8,10 +8,11 @@
 
 void puts_half(char *str)
 {
-	int cont, mid;
+	int cont, mid, n;
 
 	cont = _strlen(str);
-	mid = cont / 2;
+	n = (cont - 1) / 2;
+	mid = cont - n;
 	while (mid < cont)
 	{
 		_putchar(str[mid]);
@@ -32,7 +33,7 @@ int _strlen(char *s)
 	int cont;
 
 	cont = 0;
-	while (s[cont])
+	while (s[cont] != '\0')
 	{
 		cont++;
 	}
