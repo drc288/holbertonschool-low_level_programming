@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - change the punter *n
- * @*n: Input data
+ * @n: Input data
  *
  */
 
