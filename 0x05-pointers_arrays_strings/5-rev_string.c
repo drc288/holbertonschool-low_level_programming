@@ -7,32 +7,20 @@
  */
 
 void rev_string(char *s)
+
 {
-	int i, cont, a;
+	int count, c;
+	char l;
 
-	a = 0;
-	cont = _strlen(s);
-	for (i = cont; i >= a; i--)
+	for (count = 0 ; s[count] != '\0'; count++)
 	{
-		
 	}
-}
-
-/**
- * _strlen - Count the maximum number of a array
- * @s: Input Array
- *
- * Return: counter
- */
-
-int _strlen(char *s)
-{
-	int cont;
-
-	cont = 0;
-	while (s[cont])
+	count--;
+	for  (c = 0 ; c < count ; c++)
 	{
-		cont++;
+		l = s[count];
+		s[count] = s[c];
+		s[c] = l;
+		count--;
 	}
-	return (cont);
 }
