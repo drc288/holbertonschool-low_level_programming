@@ -1,9 +1,11 @@
 #include "holberton.h"
 
 /**
- * puts_half - print half of an arrat
- * @str: Input data array
+ * _strcat - pointer to pointer
+ * @dest: Input data array 1
+ * @src: Input data array 2
  *
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
