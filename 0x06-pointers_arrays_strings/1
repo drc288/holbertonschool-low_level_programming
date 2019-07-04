@@ -1,0 +1,24 @@
+#include "holberton.h"
+
+/**
+ * _strncat - pointer to pointer
+ * @dest: Input data array 1
+ * @src: Input data array 2
+ *
+ * Return: dest
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	int i, j;
+
+	for (i = 0; dest[i] != '\0'; i++)
+	{
+	}
+	for (j = 0; j <= n; j++)
+	{
+		dest[i] = src[j];
+	}
+
+	return (dest);
+}
