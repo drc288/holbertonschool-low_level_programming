@@ -1,11 +1,10 @@
 #include "holberton.h"
 
 /**
- * reverse_array - reverse array
- * @a: int array
- * @n: # of array
+ * string_toupper - Upercase the array of char
+ * @p: int array char
  *
- * Return: dest
+ * Return: p
  */
 
 char *string_toupper(char *p)
