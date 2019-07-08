@@ -1,10 +1,26 @@
 #include "holberton.h"
 
 /**
-  * _memset - set value in n array
-  *@s: Pointer or buffer
-  *@b: charecter to change
-  *@n: number in total array changes
+  * _strchr - Print array to charecter
+  *@s: Array
+  *@c: charecter to print
   *
   *Return: char changed
   */
+
+char *_strchr(char *s, char c)
+{
+	int i;
+	char *a;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == c)
+		{
+			a = &s[i];
+			return (a);
+		}
+	}
+	return (0);
+}
+
