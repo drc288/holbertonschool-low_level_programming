@@ -1,9 +1,11 @@
 #include "holberton.h"
 
 /**
- * rev_string - print a array charecters reverse
- * @s: Input data array
+ * _strspn - Prints the number of repeated characters in a block
+ * @s: Input Array
+ * @accept: charecters accept
  *
+ * Return: the characters
  */
 
 unsigned int _strspn(char *s, char *accept)
