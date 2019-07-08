@@ -3,7 +3,7 @@
 /**
   * _strpbrk - print the first charecter in array to the end
   *@s: The array
-  *@c: Accepts
+  *@accept: Accepts
   *
   *Return: char p whit address of &s[i]
   */
@@ -21,7 +21,6 @@ char *_strpbrk(char *s, char *accept)
 			{
 				p = &s[i];
 				return (p);
-				break;
 			}
 			if (s[i + 1] == '\0')
 			{
