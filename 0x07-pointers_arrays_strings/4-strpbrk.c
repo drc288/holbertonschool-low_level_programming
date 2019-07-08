@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
-  * _strchr - Print array to charecter
-  *@s: Array
-  *@c: charecter to print
+  * _strpbrk - print the first charecter in array to the end
+  *@s: The array
+  *@c: Accepts
   *
-  *Return: char changed
+  *Return: char p whit address of &s[i]
   */
 
 char *_strpbrk(char *s, char *accept)
@@ -13,21 +13,21 @@ char *_strpbrk(char *s, char *accept)
 	int i, j;
 	char *p;
 
-	for (j = 0; s[j] != '\0'; j++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (i = 0; accept[i] != '\0'; i++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*s == accept[i])
+			if (s[i] == accept[j])
 			{
-				p = &s;
+				p = &s[i];
 				return (p);
+				break;
 			}
-			if (accept[i + 1] == '\0')
+			if (s[i + 1] == '\0')
 			{
-				return (0);
+				return ('\0');
 			}
 		}
-		s++;
 	}
-	return (p);
+	return (0);
 }
