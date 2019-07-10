@@ -1,10 +1,25 @@
 #include "holberton.h"
 
 /**
- * _print_rev_recursion - print the reverse charecter @s
+ * _strlen_recursion - print # charecters
  * @s: char caracteres
  *
- * Return: the characters
+ * Return: # the charecters whit @s
  */
 
+int _strlen_recursion(char *s)
+{
+	int n;
 
+	n = 0;
+	if (*s != '\0')
+	{
+		n++;
+		s++;
+		return (n + _strlen_recursion(s));
+	}
+	else
+	{
+		return (0);
+	}
+}
