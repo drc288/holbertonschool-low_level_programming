@@ -51,12 +51,12 @@ int _palindrome(char *s, int i)
 
 /**
  * is_polindrome - Get polindrome
- *@s: string
+ *@s: charectes
  *
  *Return: the natural square root
  */
 
-int is_palindrome(char *s)
+int is_polindrome(char *s)
 {
 	int i;
 
