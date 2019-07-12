@@ -4,19 +4,21 @@
  * print_chessboard - Prints the chessboard.
  * @a: Pointer
  *
- * Return: Nothing (void)
  */
 
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
 
+	j = 0;
 	for (i = 0; i < 8; i++)
 	{
-		for (j = 0; j < 8; j++)
+		while (j < 8)
 		{
-			_putchar(*(*(a + i) + j));
+			_putchar(a[i][j]);
+			j++;
 		}
-		_putchar('\n');
+		j = 0;
+		_putchar(10);
 	}
 }
