@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "holberton.h"
 
 /**
  * main - mult the 1 to the 3 number
