@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 
 /**
  * main - print number of arguments
@@ -13,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	if(*argv)
 	{
-		printf("%d\n", (argc - 1));
+		_putchar(argc - 1);
 	}
 	return (0);
 }
