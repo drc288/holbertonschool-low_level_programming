@@ -49,7 +49,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		while (i <= numChar)
+		while (i < numChar)
 		{
 			p[i] = *str;
 			str++;
