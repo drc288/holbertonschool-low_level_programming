@@ -43,12 +43,10 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
-	/*
-	if (numChar == 0)
+	if (numChar == 1)
 	{
 		return ('\0');
 	}
-	*/
 	else
 	{
 		while (i < numChar)
