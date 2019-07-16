@@ -21,12 +21,11 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		while (i <= size)
+		while (i < size)
 		{
 			p[i] = c;
 			i++;
 		}
 		return (p);
-		free(p);
 	}
 }
