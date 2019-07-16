@@ -37,6 +37,12 @@ char *_strdup(char *str)
 	char *p;
 
 	numChar = _strlen_recursion(str) + 1;
+
+	if (*str == '\0')
+	{
+		return (0);
+	}
+
 	p = malloc((sizeof(char) * numChar));
 	i = 0;
 	if (!p)
