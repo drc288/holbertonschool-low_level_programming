@@ -41,21 +41,18 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	numChar = _strlen_recursion(str) + 1;
-	p = malloc((sizeof(p) * numChar));
+	p = malloc(numChar);
 	i = 0;
 	if (p == NULL)
 	{
 		return (NULL);
 	}
-	else
+	while (i < numChar)
 	{
-		while (i < numChar)
-		{
-			p[i] = *str;
-			str++;
-			i++;
-		}
-		p[i] = '\0';
-		return (p);
+		p[i] = *str;
+		str++;
+		i++;
 	}
+	p[i] = '\0';
+	return (p);
 }
