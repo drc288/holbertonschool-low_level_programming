@@ -36,13 +36,11 @@ char *_strdup(char *str)
 	int numChar, i;
 	char *p;
 
-	numChar = _strlen_recursion(str) + 1;
-
-	if (*str == '\0')
+	if (*str == 32)
 	{
-		return (0);
+		return('\0');
 	}
-
+	numChar = _strlen_recursion(str) + 1;
 	p = malloc((sizeof(char) * numChar));
 	i = 0;
 	if (!p)
