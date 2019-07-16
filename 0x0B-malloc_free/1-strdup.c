@@ -43,7 +43,7 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
-	if (numChar == 0 || numChar == 1)
+	if (numChar == 0)
 	{
 		return ('\0');
 	}
