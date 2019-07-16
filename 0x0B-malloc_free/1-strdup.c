@@ -43,13 +43,15 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
+	/*
 	if (numChar == 0)
 	{
 		return ('\0');
 	}
+	*/
 	else
 	{
-		while (i <= numChar)
+		while (i < numChar)
 		{
 			p[i] = *str;
 			str++;
