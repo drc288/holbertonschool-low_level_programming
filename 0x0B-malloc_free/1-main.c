@@ -11,7 +11,7 @@ int main(void)
 {
     char *s;
 
-    s = _strdup("totalmente");
+    s = _strdup("  $$ Valgrind $$");
     if (s == NULL)
     {
         printf("failed to allocate memory\n");
