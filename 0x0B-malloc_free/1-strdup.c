@@ -37,13 +37,13 @@ char *_strdup(char *str)
 	char *p;
 
 	numChar = _strlen_recursion(str);
-	p = malloc((sizeof(char) * numChar) + 1);
+	p = malloc((sizeof(char) * numChar));
 	i = 0;
-	if (numChar == 0)
+	if (!p)
 	{
 		return ('\0');
 	}
-	if (!p)
+	if (numChar == 0 || numChar == 1)
 	{
 		return ('\0');
 	}
