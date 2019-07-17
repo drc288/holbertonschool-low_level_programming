@@ -38,11 +38,11 @@ char *str_concat(char *s1, char *s2)
 	unsigned int suma, i, j, n1;
 	char *p;
 
-	if (*s1 == '\0')
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-	if (*s2 == '\0')
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
