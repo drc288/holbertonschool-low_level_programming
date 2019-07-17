@@ -38,24 +38,29 @@ char *str_concat(char *s1, char *s2)
 	int numA, numB, suma, i, j;
 	char *p;
 
-	if (*s1 == '\0' || *s2 == '\0')
+	if (*s1 == '\0')
+	{
+		s1 = "";
+	}
+	if (*s2 == '\0')
+	{
+		s2 = "";
+	}
+	numA = _strlen_recursion(s1);
+	numB = _strlen_recursion(s2);
+	suma = numA + numB;
+	p = malloc(suma);
+	i = 0;
+	if (p == NULL)
 	{
 		return (NULL);
 	}
-
-	numA = _strlen_recursion(s1);
-	numB = _strlen_recursion(s2) + 1;
-
-	suma = numA + numB;
-	p = malloc(suma);
-
-	i = 0;
 	while (s1[i] != '\0')
 	{
 		p[i] = s1[i];
 		i++;
 	}
-
+	i = i - 1;
 	j = 0;
 	while (s2[j] != '\0')
 	{
@@ -63,7 +68,6 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		j++;
 	}
-
 	p[i] = '\0';
 	return (p);
 }
