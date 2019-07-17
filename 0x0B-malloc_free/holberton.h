@@ -7,5 +7,6 @@ int _strlen_recursion(char *s);
 /* Pint 0x08 */
 char *create_array(unsigned int size, char c);
 char *_strdup(char *str);
+char *str_concat(char *s1, char *s2);
 
 #endif
