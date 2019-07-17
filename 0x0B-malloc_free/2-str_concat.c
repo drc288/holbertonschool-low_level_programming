@@ -35,7 +35,7 @@ int _strlen_recursion(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	int numA, numB, suma, i, j;
+	unsigned int suma, i, j;
 	char *p;
 
 	if (*s1 == '\0')
@@ -46,11 +46,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	numA = _strlen_recursion(s1);
-	numB = _strlen_recursion(s2);
-	suma = numA + numB;
-	p = malloc(suma);
+
+	suma = _strlen_recursion(s1) + _strlen_recursion(s2);
+	p = malloc(suma + 1);
 	i = 0;
+
 	if (p == NULL)
 	{
 		return (NULL);
