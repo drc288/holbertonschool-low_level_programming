@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	numA = _strlen_recursion(s1) + 1;
+	numA = _strlen_recursion(s1);
 	numB = _strlen_recursion(s2) + 1;
 
 	suma = numA + numB;
