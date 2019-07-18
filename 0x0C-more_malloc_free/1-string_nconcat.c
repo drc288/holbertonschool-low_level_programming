@@ -47,7 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = num2;
 	}
-	p = malloc(sizeof(char) * ((num1 + n) + 1));
+	p = malloc(sizeof(char) * (num1 + n + 1));
 	if (p == NULL)
 	{
 		return (NULL);
@@ -60,9 +60,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (j = 0; j < n; j++)
 	{
-		p[i] = s2[j];
-		i++;
+		p[num1] = s2[j];
+		num1++;
 	}
-	p[i] = '\0';
+	p[num1] = '\0';
 	return (p);
 }
