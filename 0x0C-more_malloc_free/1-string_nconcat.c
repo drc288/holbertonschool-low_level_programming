@@ -20,50 +20,6 @@ int _strlen(char *s)
 }
 
 /**
- * str_concat - concat arrays
- * @s1: array 1
- * @s2: array 2
- *
- * Return: *pointer with array
- */
-
-char *str_concat(char *s1, char *s2)
-{
-	unsigned int suma, i, j, n1;
-	char *p;
-
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
-
-	suma = _strlen(s1) + _strlen(s2);
-	p = malloc(suma + 1);
-	n1 = 0;
-
-	if (p == NULL)
-	{
-		return (NULL);
-	}
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		p[i] = s1[i];
-	}
-
-	for (j = i; s2[n1] != '\0'; j++)
-	{
-		p[j] = s2[n1];
-		n1++;
-	}
-	p[j] = '\0';
-	return (p);
-}
-
-/**
  * string_nconcat - concat in s1 n charecters of s2
  * @s1: String 1
  * @s2: String 2
