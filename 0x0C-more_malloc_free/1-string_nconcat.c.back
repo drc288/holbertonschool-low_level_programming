@@ -89,18 +89,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n >= num2)
 	{
-		p = malloc((num1 + num2) + 1);
+		p = str_concat(s1, s2);
+		return (p);
 	}
-	else
-	{
-		p = malloc((num1 + n) + 1);
-	}
-
+	p = malloc(num1 + (n + 1));
 	if (p == NULL)
 	{
 		return (NULL);
 	}
-
 	for (i = 0; i <= num1; i++)
 	{
 		p[i] = s1[i];
