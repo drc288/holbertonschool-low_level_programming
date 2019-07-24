@@ -5,14 +5,13 @@
  * @name: name parameter
  * @f: function toprint the name
  *
- * Return: Pointer
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (name == NULL)
+	if (name == NULL || f == NULL)
 	{
 		return;
 	}
-	f(name);
+	(*f)(name);
 }
