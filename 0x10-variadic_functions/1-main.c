@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    print_numbers("-,-", 2, 20, 30);
+    print_numbers('\0', 2, 20, 30);
     return (0);
 }
