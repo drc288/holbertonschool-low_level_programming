@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    print_numbers('\0', 2, 20, 30);
+    print_numbers(NULL, 5, 20, 30, 50, 22, 1000000000);
     return (0);
 }
