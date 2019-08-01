@@ -13,6 +13,7 @@
  * Description: singly linked list node structure
  * for Holberton project
  */
+
 typedef struct list_s
 {
 	char *str;
@@ -23,5 +24,6 @@ typedef struct list_s
 /* PROTOTYPES */
 
 size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
 
 #endif
