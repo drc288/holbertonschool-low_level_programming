@@ -1,11 +1,8 @@
 #include "lists.h"
 
 /**
- * add_node_end - add new nodo in the end of the list
- * @head: header of the lit
- * @str: string
- *
- * Return: the number of elemnts.
+ * free_listint - free linked list
+ * @head: linked list
  */
 
 void free_listint(listint_t *head)
