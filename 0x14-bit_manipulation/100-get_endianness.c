@@ -11,7 +11,6 @@ int get_endianness(void)
 
 	if (((bit << 4) & 0x1) == 0x1)
 		return (0);
-	
 	else
 		return (1);
 }
