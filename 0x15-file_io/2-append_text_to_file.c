@@ -35,7 +35,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		text_content = "";
 
 	fd = open(filename, O_RDWR | O_APPEND);
-	if (fd == -1)
+	if (fd < 0)
 	{
 		if (errno == ENOENT || errno == EROFS)
 			return (-1);
