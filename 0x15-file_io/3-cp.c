@@ -1,7 +1,5 @@
 #include "holberton.h"
-#ifndef BUF_SIZE
 #define BUF_SIZE 1024
-#endif
 
 /**
  * main - contaign a function to cp file
