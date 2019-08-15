@@ -33,7 +33,7 @@ int main(int arc, char **arv)
 	if (size_to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arv[2]), exit(99);
 
-	while (size_from == BUF_SIZE)
+	while (size_from == 1024)
 	{
 		size_from = read(file_from, buf, BUF_SIZE);
 		size_to = write(file_to, buf, size_from);
