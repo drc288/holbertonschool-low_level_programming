@@ -4,7 +4,7 @@
  * print_dlistint - return the numbers of the nodes in a double linked list
  * @h: The double linked list
  *
- * Return the number of the nodes
+ * Return: the number of the nodes
  */
 
 size_t print_dlistint(const dlistint_t *h)
@@ -14,7 +14,6 @@ size_t print_dlistint(const dlistint_t *h)
 
 	if (h == NULL)
 		return (0);
-	
 	tmp = h;
 	while (tmp != NULL)
 	{
