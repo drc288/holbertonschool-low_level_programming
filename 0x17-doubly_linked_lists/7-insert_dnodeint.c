@@ -9,18 +9,18 @@
 
 size_t dlistint_len(const dlistint_t *h)
 {
-        const dlistint_t *tmp = NULL;
-        int count = 0;
+	const dlistint_t *tmp = NULL;
+	int count = 0;
 
-        if (h == NULL)
-                return (0);
-        tmp = h;
-        while (tmp != NULL)
-        {
-                count += 1;
-                tmp = tmp->next;
-        }
-        return (count);
+	if (h == NULL)
+		return (0);
+	tmp = h;
+	while (tmp != NULL)
+	{
+		count += 1;
+		tmp = tmp->next;
+	}
+	return (count);
 }
 
 /**
@@ -62,11 +62,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		tmp = tmp->next;
 		if (tmp == NULL)
-			return(NULL);
+			return (NULL);
 		i++;
 	}
 	new->next = tmp->next;
 	new->prev = tmp;
 	tmp->next = new;
+	tmp->next->prev = new /* Next node in position prev */
 	return (new);
 }
