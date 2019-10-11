@@ -20,14 +20,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	/* Verify if key and value and ht is null */
 	if (key == NULL && value == NULL && ht == NULL)
 		return (0);
+	/* dup values */
+	dup_key = strdup(key);
+	dup_value = strdup(value);
 	/* set index and key_seze */
 	index = ht->size;
 	hash_djb2((unsigned char *)key);
 	array_index = key_index((unsigned char *)key, index);
 	if (array_index > index)
 		return (0);
-	dup_key = strdup(key);
-	dup_value = strdup(value);
 	tmp = ht->array[array_index];
 	if (tmp && strcmp(tmp->key, dup_key) == 0)
 	{
