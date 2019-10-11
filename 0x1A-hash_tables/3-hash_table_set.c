@@ -1,8 +1,13 @@
 #include "hash_tables.h"
 
 /**
- * 
+ * hash_table_set - set nodo in the table
+ * @ht: hash table
+ * @key: the key
+ * @value: the value
+ * Return: 0 to fail 1 to secccuss
  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	/* Create index for array and encryot the key */
