@@ -27,7 +27,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	tmp = ht->array[array_index];
-	if (tmp == NULL && strcmp(tmp->key, dup_key) == 0)
+	if (tmp && strcmp(tmp->key, dup_key) == 0)
 	{
 		tmp->value = dup_value;
 	}
