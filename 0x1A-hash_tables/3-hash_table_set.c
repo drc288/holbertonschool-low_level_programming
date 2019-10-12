@@ -22,11 +22,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	/* dup values */
 	dup_key = strdup(key);
 	dup_value = strdup(value);
-	/* set index and key_seze */
+	/* set index */
 	array_index = key_index((unsigned char *)key, ht->size);
+	/* Set tmp in position array_index */
 	tmp = ht->array[array_index];
 	while (tmp != NULL)
 	{
+		/*  */
 		if (strcmp(tmp->key, dup_key) == 0)
 		{
 			tmp->value = dup_value;
