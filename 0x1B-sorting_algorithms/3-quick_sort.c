@@ -6,7 +6,7 @@
  * @low: low digit of array
  * @high: max num in the array
  * @size: size of the array
- * Return: the position o pivote
+ * Return: the position of pivote
  */
 
 int part(int *arr, int low, int high, size_t size)
@@ -16,7 +16,7 @@ int part(int *arr, int low, int high, size_t size)
 
 	i = low - 1;
 	pivot = arr[high];
-	for (j = low; j <= high - 1; j++)
+	for (j = low; j < high; j++)
 	{
 		if (arr[j] < pivot)
 		{
