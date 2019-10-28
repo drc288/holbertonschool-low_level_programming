@@ -13,25 +13,15 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 /* print the array */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
-/**
- * Bubble Sort - simple sorting algorithm
- * data_structure = Array
- * worst_case = O(n^^2)
- */
 void bubble_sort(int *array, size_t size);
-/**
- * selection_sort - a sort algorithm
- * data_structure = Array
- * worst_case = 0(n^^2)
- */
 void selection_sort(int *array, size_t size);
 
 #endif
