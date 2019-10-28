@@ -16,7 +16,7 @@ int part(int *arr, int low, int high, size_t size)
 
 	i = low - 1;
 	pivot = arr[high];
-	for (j = low; j < high; j++)
+	for (j = low; j <= high - 1; j++)
 	{
 		if (arr[j] < pivot)
 		{
@@ -28,11 +28,14 @@ int part(int *arr, int low, int high, size_t size)
 				print_array(arr, size);
 		}
 	}
-	tmp = arr[i + 1];
-	arr[i + 1] = arr[high];
-	arr[high] = tmp;
-	if (i + 1 != j)
-		print_array(arr, size);
+	if (arr[i + 1] != arr[high])
+	{
+		tmp = arr[i + 1];
+		arr[i + 1] = arr[high];
+		arr[high] = tmp;
+		if (i + 1 != j)
+			print_array(arr, size);
+	}
 	return (i + 1);
 }
 
