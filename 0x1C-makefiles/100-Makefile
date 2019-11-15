@@ -2,14 +2,10 @@
 # For the compiler
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
-# Files
 SRC = main.c holberton.c
-# Convert the .c to .o
 OBJ = $(SRC:.c=.o)
-# Executable
 NAME = holberton
-# Delete
-RM = rm -f
+
 .PHONY: clean oclean fclean all re
 # all need the files.o to create the executable
 # we pass the objects to him with $(OBJ)
@@ -29,9 +25,3 @@ fclean: oclean clean
 
 # Remove and create all
 re: oclean all
-
-# $@ evaluate to all
-# $< evaluate .c
-# if OBJ not exist, create
-.c:
-	$(CC) -c $< -o $@
