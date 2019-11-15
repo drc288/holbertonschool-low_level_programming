@@ -1,0 +1,30 @@
+# *** VARIABLES ***
+CC = gcc
+SRC = main.c holberton.c
+# Get the SRC and convert the .c to .o
+OBJ = $(SRC:.c=.o)
+NAME = holberton
+RM = rm -f
+# all need the files.o to create the executable
+# we pass the objects to him with $(OBJ)
+all:$(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Remove the tmp files and the executable
+clean:
+	$(RM) *~ $(NAME)
+
+# Remove the .o files
+oclean:
+	$(RM) $(OBJ)
+
+# Remove all files, call the oclean and the clean
+fclean: oclean clean
+
+# Remove and create all
+re: fclean all
+# $@ evaluate to all
+# $< evaluate .c
+# if OBJ not exist, create
+.c:
+	$(CC) -c $< -o $@
