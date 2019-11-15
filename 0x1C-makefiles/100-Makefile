@@ -6,7 +6,7 @@ SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
 NAME = holberton
 
-.PHONY: clean oclean fclean all re
+.PHONY: all clean oclean fclean re
 # all need the files.o to create the executable
 # we pass the objects to him with $(OBJ)
 all:$(OBJ) m.h
@@ -21,7 +21,7 @@ oclean:
 	$(RM) $(OBJ)
 
 # Remove all files, call the oclean and the clean
-fclean: oclean clean
+fclean: clean oclean
 
 # Remove and create all
 re: oclean all
