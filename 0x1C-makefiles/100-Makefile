@@ -28,10 +28,10 @@ oclean:
 fclean: oclean clean
 
 # Remove and create all
-re: fclean all
+re: oclean all
 
 # $@ evaluate to all
 # $< evaluate .c
 # if OBJ not exist, create
 .c:
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) -c $< -o $@
