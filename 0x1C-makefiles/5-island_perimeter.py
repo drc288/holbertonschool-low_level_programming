@@ -35,5 +35,5 @@ def island_perimeter(grid):
                 if grid[position_y][k] == 1:
                     count2 += 1
     if position_y == 0:
-        return
+        return 0
     return 2 * (count1 + count2)
