@@ -1,0 +1,15 @@
+# *** VARIABLES ***
+CC = gcc
+SRC = main.c holberton.c
+# Get the SRC and convert the .c to .o
+OBJ = $(SRC:.c=.o)
+NAME = holberton
+# all need the files.o to create the executable
+# we pass the objects to him with $(OBJ)
+all:$(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+# $@ evaluate to all
+# $< evaluate .c
+# if OBJ not exist, create
+.c:
+	$(CC) -c $< -o $@

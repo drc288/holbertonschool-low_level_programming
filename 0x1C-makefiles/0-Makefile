@@ -1,5 +1,4 @@
 # Create my fist makedile
 # all - run if the comand in the prompt are make
 all:
-	# Create the executable for holberton
 	gcc main.c holberton.c -o holberton
