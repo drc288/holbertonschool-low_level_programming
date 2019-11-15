@@ -13,16 +13,16 @@ RM = rm -f
 .PHONY: clean oclean fclean all re
 # all need the files.o to create the executable
 # we pass the objects to him with $(OBJ)
-all:$(OBJ) m.h
-        $(CC) $(OBJ) -o $(NAME)
+all:$(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 # Remove the tmp files and the executable
 clean:
-        $(RM) *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 # Remove the .o files
 oclean:
-        $(RM) $(OBJ)
+	$(RM) $(OBJ)
 
 # Remove all files, call the oclean and the clean
 fclean: oclean clean
@@ -34,4 +34,4 @@ re: fclean all
 # $< evaluate .c
 # if OBJ not exist, create
 .c:
-        $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
