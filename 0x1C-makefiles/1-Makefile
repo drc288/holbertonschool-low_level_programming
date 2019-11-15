@@ -1,0 +1,8 @@
+# Create my fist makedile
+# Create Variables
+CC = gcc
+SRC = main.c holberton.c
+# all - run if the comand in the prompt are make
+# To use the variables call $()
+all:
+	$(CC) $(SRC) -o holberton
