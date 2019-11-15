@@ -18,8 +18,8 @@ def island_perimeter(grid):
             # get the position and set the flag to True
             if grid[i][j] == 1:
                 # ------------------ FOR Y ----------------------------
-                # verify if y(i) in the next position are 0 or i are in the last
-                # position
+                # verify if y(i) in the next position are 0 or
+                # i are in the last position
                 if grid[i + 1][j] == 0 or i == (y - 1):
                     count += 1
                 # verify if the previus position are 0 or
@@ -27,8 +27,8 @@ def island_perimeter(grid):
                 if grid[i - 1][j] == 0 or i == 0:
                     count += 1
                 # ------------------ FOR X ----------------------------
-                # verify if x(j) in the next position are 0 or j are in the last
-                # position
+                # verify if x(j) in the next position are 0 or
+                # j are in the last position
                 if grid[i][j + 1] == 0 or j == (x - 1):
                     count += 1
                 if grid[i][j - 1] == 0 or j == 0:
