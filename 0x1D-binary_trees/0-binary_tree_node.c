@@ -3,31 +3,35 @@
 /**
  * binary_tree_node - create a new parent in the node
  * @parent: the parent null
- * value: id
+ * @value: id
  *
  * Return: the node
  */
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-    binary_tree_t *new_node = NULL;
+	/*Create a new node*/
+	binary_tree_t *new_node = NULL;
 
-    if (new_node == NULL)
-        return (NULL);
+	/*Verify if the node exists*/
+	new_node = malloc(sizeof(binary_tree_t));
+	if (new_node == NULL)
+		return (NULL);
 
-    new_node->n = value;
-    new_node->right = NULL;
-    new_node->left = NULL;
+	/*Create the basic structure of the node*/
+	new_node->n = value;
+	new_node->right = NULL;
+	new_node->left = NULL;
+	/*If parent exists set value of parent*/
+	if (parent)
+	{
+		new_node->parent = parent;
+	}
+	/*If not set NULL*/
+	else
+	{
+		new_node->parent = NULL;
+	}
 
-    if (parent)
-    {
-        free(new_node);
-        parent->n = value;
-        parent->right = NULL;
-        parent->left = NULL;
-
-        return (parent);
-    }
-
-    return (new_node);
+	return (new_node);
 }
