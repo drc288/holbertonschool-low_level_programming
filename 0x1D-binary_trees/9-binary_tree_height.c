@@ -1,24 +1,33 @@
 #include "binary_trees.h"
+
+/**
+ * bt_hi - create the recursivity for binary_tree_height
+ * @tree: the tree
+ *
+ * Return: the sum of nodes
+ */
+
 size_t bt_hi(const binary_tree_t *tree)
 {
-        size_t right = 0;
-        size_t left = 0;
+	size_t right = 0;
+	size_t left = 0;
 
-        if (tree != NULL)
-        {
-                left = bt_hi(tree->left);
-                right = bt_hi(tree->right);
+	if (tree != NULL)
+	{
+		left = bt_hi(tree->left);
+		right = bt_hi(tree->right);
 
-                if (left > right)
-                        return (1 + left);
-                else
-                        return (1 + right);
-        }
-        else
-        {
-                return (0);
-        }
+		if (left > right)
+			return (1 + left);
+		else
+			return (1 + right);
+	}
+	else
+	{
+		return (0);
+	}
 }
+
 /**
  * binary_tree_height - get the height of the tree
  * @tree: the tree
