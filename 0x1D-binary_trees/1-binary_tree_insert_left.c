@@ -30,10 +30,6 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	else
 	{
 		tmp = parent->left;
-		/**
-	 	* Switch the parent in the left position with the new node
-	 	* and switch with the new node with the parent
-	 	*/
 		parent->left = new_node;
 		new_node->parent = parent;
 		new_node->left = tmp;
