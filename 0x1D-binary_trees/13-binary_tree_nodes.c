@@ -4,7 +4,7 @@
  * binary_tree_nodes - count the nodes
  * @tree: the tree
  *
- * return the number of nodes
+ * Return: the number of nodes
  */
 
 size_t binary_tree_nodes(const binary_tree_t *tree)
