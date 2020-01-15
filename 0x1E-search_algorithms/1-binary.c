@@ -5,7 +5,6 @@
  * @array: array to get the data
  * @size: the size of the array
  * @value: value to search
- * 
  * Return: return the index of the data or -1 if not
  */
 
@@ -17,7 +16,6 @@ int binary_search(int *array, size_t size, int value)
 
 	if (!array)
 		return (-1);
-	
 	while (left <= right)
 	{
 		midle = (int)(left + right) / 2;
