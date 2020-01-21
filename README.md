@@ -74,14 +74,14 @@ a << 2;  /* 00000110 01001000, 1608 */
 | [0x0F. C - Function pointers](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x0F-function_pointers) | Functions to pointers and why to use them, syntax management |
 | [0x10. C - Variadic functions](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x10-variadic_functions) | Handling of varied lists and how we can iterate them |
 | [0x11. C - printf](https://github.com/drc288/printf) | Group project where the **printf** function is created, which is a copy of the actual command |
-| [0x12. C - Singly linked lists](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x12-singly_linked_lists) | First iteration with simply linked lists, understand the algorithm behind it and how to implement it |
+| [0x12. C - Singly linked lists](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x12-singly_linked_lists) | First iteration with simply linked lists, understand the algorithm behind it and how to implement it |
 | [0x13. C - More singly linked lists](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x13-more_singly_linked_lists) | More simple lists and exercises where they test us |
 | [0x14. C - Bit manipulation](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x14-bit_manipulation) | Bit manipulation, addition, subtraction and various exercises manipulating different variables, as well as moving in memory |
 | [0x15. C - File I/O](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x15-file_io) | File handling, open, write, read, close functions |
 | [0x16. C - Simple Shell](https://github.com/drc288/simple_shell) | Creation of the first **interactive shell**, in this project we test what we have learned in low level, re-creating the /bin/bash |
 | [0x17. C - Doubly linked lists](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists) | first structures where we will handle a double linked list, different operations that we can do, delete, add or change the position of a list |
 | [0x18. C - Dynamic libraries](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries) | Creation of dynamic libraries |
-| [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/guxal/monty) |  |Tercer proyecto donde realizamos un interpretador de listas, **monty python** |
+| [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/guxal/monty) | Tercer proyecto donde realizamos un interpretador de listas, **monty python** |
 | [0x1A. C - Hash tables](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x1A-hash_tables) | Creating a hash table, managing collisions and why it's good to use |
 | [0x1B. C - Sorting algorithms & Big O](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x1B-sorting_algorithms) | use of different sorting algorithms as well as getting the big O |
 | [0x1C. C - Makefiles](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x1C-makefiles) | Creation of different make files to perform different types of installations |
