@@ -2,6 +2,8 @@
 
 ![Logo Holberton](/img/hbtn.png)
 
+In this project we will look at concepts such as C and Unix programming, data structures, algorithms, as well as reverse engineering and security protocols
+
 ### Concepts
 
 + C programming
@@ -52,8 +54,8 @@ a << 2;  /* 00000110 01001000, 1608 */
 
 ### To see more of the concepts...
 
-| Proyect | Description |
-| ------- | ----------- |
+| Proyects | Description |
+| -------- | ----------- |
 | [0x00. C - Hello, World](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x00-hello_world) | first iterations with the C language, good id with Betty, compilation concepts and more |
 | [0x01. C - Variables, if, else, while](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while) | Managing logical operators and viewing different iterators |
 | [0x02. C - Functions, nested loops](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x02-functions_nested_loops) | Handling of different iterators |
@@ -71,3 +73,20 @@ a << 2;  /* 00000110 01001000, 1608 */
 | [0x0E. C - Structures, typedef](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x0E-structures_typedef) | structure type data, create a structure, give it value and perform different iterations to it |
 | [0x0F. C - Function pointers](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x0F-function_pointers) | Functions to pointers and why to use them, syntax management |
 | [0x10. C - Variadic functions](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x10-variadic_functions) | Handling of varied lists and how we can iterate them |
+| [0x11. C - printf](https://github.com/drc288/printf) | Group project where the **printf** function is created, which is a copy of the actual command |
+| [0x12. C - Singly linked lists](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x12-singly_linked_lists) | First iteration with simply linked lists, understand the algorithm behind it and how to implement it |
+| [0x13. C - More singly linked lists](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x13-more_singly_linked_lists) | More simple lists and exercises where they test us |
+| [0x14. C - Bit manipulation](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x14-bit_manipulation) | Bit manipulation, addition, subtraction and various exercises manipulating different variables, as well as moving in memory |
+| [0x15. C - File I/O](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x15-file_io) | File handling, open, write, read, close functions |
+| [0x16. C - Simple Shell](https://github.com/drc288/simple_shell) | Creation of the first **interactive shell**, in this project we test what we have learned in low level, re-creating the /bin/bash |
+| [0x17. C - Doubly linked lists](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists) | first structures where we will handle a double linked list, different operations that we can do, delete, add or change the position of a list |
+| [0x18. C - Dynamic libraries](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries) | Creation of dynamic libraries |
+| [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/guxal/monty) |  |Tercer proyecto donde realizamos un interpretador de listas, **monty python** |
+| [0x1A. C - Hash tables](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x1A-hash_tables) | Creating a hash table, managing collisions and why it's good to use |
+| [0x1B. C - Sorting algorithms & Big O](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x1B-sorting_algorithms) | use of different sorting algorithms as well as getting the big O |
+| [0x1C. C - Makefiles](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x1C-makefiles) | Creation of different make files to perform different types of installations |
+| [0x1D. C - Binary trees](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x1D-binary_trees) | Creation of a binary tree, how to insert elentos, how to search in a binary tree etc... |
+| [0x1E. C - Search Algorithms](https://github.com/drc288/holbertonschool-low_level_programming/tree/master/0x1E-search_algorithms) | search algorithms and what is your score |
+
+This is the end of this wonderful tour, thanks to Holberton for giving me this good experience and I will miss you betty-style
+Last update 20/01/2020
